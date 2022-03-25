@@ -1,0 +1,32 @@
+ID: Project3
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: db
+   type: hdb
+   path: db
+   requires:
+    - name: hdi_db
+
+
+ - name: OPENSAP_HANA_USER_00
+   type: hdb
+   path: Cross_Local
+   requires:
+    - name: hdi_OPENSAP_HANA_USER_00
+
+resources:
+ - name: hdi_db
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
+
+ - name: hdi_OPENSAP_HANA_USER_00
+   parameters:
+      config:
+         schema: OPENSAP_HANA_USER_00
+   properties:
+      hdi-container-name_2: ${service-name}
+   type: com.sap.xs.hdi-container
+

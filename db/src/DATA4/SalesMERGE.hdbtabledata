@@ -1,0 +1,82 @@
+{
+    "format_version": 1,
+    "imports": [
+        {
+            "target_table": "MERGE_SALES_ORDER_2014",
+            "source_data": {
+                "data_type": "CSV",
+                "file_name": "SALES_2014.csv",
+                "has_header": true,
+                "dialect"   : "HANA",
+                "type_config": {
+				"delimiter": ","
+			}
+            },
+            "import_settings": {
+            	"include_filter" : [ ],            
+                "import_columns": [
+                    "SALESORDERID",
+					"HISTORY_CREATEDBY_EMPLOYEEID",
+					"HISTORY_CREATEDAT",
+					"HISTORY_CHANGEDBY_EMPLOYEEID",
+					"HISTORY_CHANGEDAT",
+					"PARTNER_PARTNERID",
+					"LIFECYCLESTATUS",
+					"BILLINGSTATUS",
+					"DELIVERYSTATUS",
+					"HEADER_SALESORDERID",
+					"PRODUCT_PRODUCTID",
+					"NOTEID",
+					"CURRENCY",
+					"GROSSAMOUNT",
+					"NETAMOUNT",
+					"TAXAMOUNT",
+					"ITEMATPSTATUS",
+					"OPITEMPOS",
+					"QUANTITY",
+					"QUANTITYUNIT",
+					"DELIVERYDATE"
+                ]
+            }
+        },
+        {
+            "target_table": "MERGE_SALES_ORDER_2015",
+            "source_data": {
+                "data_type": "CSV",
+                "file_name": "SALES_2015.csv",
+                "has_header": true,
+                "dialect"   : "HANA",
+                "type_config": {
+				"delimiter": ","
+			}
+            },
+            "import_settings": {
+            	"include_filter" : [ ],            
+                "import_columns": [
+                    "SALESORDERID",
+					"HISTORY_CREATEDBY_EMPLOYEEID",
+					"HISTORY_CREATEDAT",
+					"HISTORY_CHANGEDBY_EMPLOYEEID",
+					"HISTORY_CHANGEDAT",
+					"PARTNER_PARTNERID",
+					"LIFECYCLESTATUS",
+					"BILLINGSTATUS",
+					"DELIVERYSTATUS",
+					"HEADER_SALESORDERID",
+					"PRODUCT_PRODUCTID",
+					"NOTEID",
+					"CURRENCY",
+					"GROSSAMOUNT",
+					"NETAMOUNT",
+					"TAXAMOUNT",
+					"ITEMATPSTATUS",
+					"OPITEMPOS",
+					"QUANTITY",
+					"QUANTITYUNIT",
+					"DELIVERYDATE"
+                ]
+            }
+        }
+        
+    ]
+}
